@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  color-scheme: light;
+  background-color: white;
+}
+
+html.dark {
+    color-scheme: dark;
+    background-color: #111827; /* gray-900 */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.notebook-paper-bg {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(to right, #d1d5db 1px, transparent 1px),
+    linear-gradient(to bottom, #d1d5db 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dark .notebook-paper-bg {
+    background-color: #111827; /* gray-900 */
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.eraser-cursor {
+  /* A white circle with a black border, centered */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10" stroke="black" fill="white" /></svg>')
+      12 12,
+    auto;
+}
+
+.font-handwritten {
+  font-family: 'Kalam', cursive;
+}
